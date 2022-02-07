@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Cat Survey</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+
+
+
+<div class="container">
+    <header class="header">
+      <h1 id="title" class="text-center">Cat Survey Form</h1>
+      <p id="description" class="description text-center">
+        Let's talk about cats shall we?
+      </p>
+    </header>
+    <form id="survey-form">
+      <div class="form-group">
+        <label id="name-label" for="name">Name</label>
+        <input
+          type="text"
+          name="name"
+          id="name"
+          class="form-control"
+          placeholder="Enter your name"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="email-label" for="email">Email</label>
+        <input
+          type="email"
+          name="email"
+          id="email"
+          class="form-control"
+          placeholder="Enter your Email"
+          required
+        />
+      </div>
+      <div class="form-group">
+        <label id="number-label" for="number"
+          >Age<span class="clue">(optional)</span></label
+        >
+        <input
+          type="number"
+          name="age"
+          id="number"
+          min="10"
+          max="99"
+          class="form-control"
+          placeholder="Age"
+        />
+      </div>
+      <div class="form-group">
+        <p>Which option best describes your relationship with cats?</p>
+        <select id="dropdown" name="relationship" class="form-control" required>
+          <option disabled selected value>Select relationship</option>
+          <option value="love-so-much">I love cats sooooo much!</option>
+          <option value="really-love">I really love cats</option>
+          <option value="love-cats">I love cats!</option>
+          <option value="preferNo">Prefer not to say (...in public because it's embarrasing how much I love cats)</option>
+          <option value="other">Other (I love cats so much I can't put it into words)</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>How many cats should the average person have?</p>
+        <label>
+          <input
+            name="user-recommend"
+            value="five-plus"
+            type="radio"
+            class="input-radio"
+            checked
+          />Five or more</label
+        >
+        <label>
+          <input
+            name="user-recommend"
+            value="four"
+            type="radio"
+            class="input-radio"
+          />Four</label
+        >
+  
+        <label
+          ><input
+            name="user-recommend"
+            value="not-sure"
+            type="radio"
+            class="input-radio"
+          />Not sure (but probably like, a lot)</label
+        >
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What is the cutest thing that a cat can wear?
+        </p>
+        <select id="cutest-thing" name="cutestthing" class="form-control" required>
+          <option disabled selected value>Select an option</option>
+          <option value="hat">A little hat</option>
+          <option value="vest">A little vest</option>
+          <option value="bow">A little bow</option>
+          <option value="glasses">Glasses (either little or oversized)</option>
+        </select>
+      </div>
+  
+      <div class="form-group">
+        <p>
+          What features are most important to you in a cat?
+          <span class="clue">(Check all that apply)</span>
+        </p>
+  
+        <label><input
+            name="prefer"
+            value="furriness"
+            type="checkbox"
+            class="input-checkbox"
+          />Furriness</label>
+        <label>
+          <input
+            name="prefer"
+            value="fluffiness"
+            type="checkbox"
+            class="input-checkbox"
+          />Fluffiness</label>
+        <label><input
+            name="prefer"
+            value="fuzziness"
+            type="checkbox"
+            class="input-checkbox"
+          />Fuzziness</label>
+        <label><input
+            name="prefer"
+            value="four-footed-ness"
+            type="checkbox"
+            class="input-checkbox"
+          />Four-footed-ness</label>
+        <label><input
+            name="prefer"
+            value="friendliness"
+            type="checkbox"
+            class="input-checkbox"
+          />Friendliness</label>
+        <label><input
+            name="prefer"
+            value="felinicity"
+            type="checkbox"
+            class="input-checkbox"
+          />Felinicity</label>
+      </div>
+  
+      <div class="form-group">
+        <p>Please describe how you would go about petting and loving all of the cats.</p>
+        <textarea
+          id="comments"
+          class="input-textarea"
+          name="comment"
+          placeholder="Enter your comment here..."
+        ></textarea>
+      </div>
+  
+      <div class="form-group">
+        <button type="submit" id="submit" class="submit-button">
+          Submit
+        </button>
+      </div>
+    </form>
+  </div>
+  </html>
